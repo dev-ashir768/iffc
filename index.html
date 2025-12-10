@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="IFFC - International Fashion Festival Canada. Celebrating culture, craft, and creativity across continents."
+    />
+    <title>Home - IFFC - International Fashion Festival Canada</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Font Awesome for Social Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <img src="assets/images/logo.png" width="220" alt="IFFC Logo" />
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a href="#about" class="nav-link">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="#our-story">Our Story</a></li>
+              <li><a href="#global-impact">Global Impact</a></li>
+              <li><a href="#leadership">Leadership Team</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#events" class="nav-link">Events</a>
+            <ul class="dropdown-menu">
+              <li><a href="#iffc-canada">IFFC Canada</a></li>
+              <li><a href="#iff-europe">IFF Europe</a></li>
+              <li><a href="#past-events">Past Events Archive</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#participate" class="nav-link">Participate</a>
+            <ul class="dropdown-menu">
+              <li><a href="#designers">Designers</a></li>
+              <li><a href="#exhibitors">Exhibitors</a></li>
+              <li><a href="#models">Models / Talent</a></li>
+              <li><a href="#volunteers">Volunteers</a></li>
+              <li><a href="#media">Media</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#sponsors" class="nav-link">Sponsors</a>
+            <ul class="dropdown-menu">
+              <li><a href="#sponsor-with-us">Sponsor With Us</a></li>
+              <li><a href="#past-sponsors">Past Sponsors</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#press" class="nav-link">Press & Media</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tickets" class="nav-link">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <video autoplay muted loop playsinline id="heroVideo">
+          <source src="./assets//videos/IFFC-teaser-03.mp4" type="video/mp4" />
+          <source src="./assets//videos/IFFC-teaser-03.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title" data-aos="fade-up">IFFC</h1>
+        <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+          INTERNATIONAL FASHION<br />FESTIVAL CANADA
+        </h2>
+        <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+          Celebrating culture, craft, and creativity across continents.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <!-- <section class="section stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" data-aos="fade-up">
+            <div class="stat-number" data-count="15" data-suffix="+">0+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-number" data-count="25" data-suffix="+">0+</div>
+            <div class="stat-label">Countries Represented</div>
+          </div>
+
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-number" data-count="500" data-suffix="+">0+</div>
+            <div class="stat-label">Designers Showcased</div>
+          </div>
+
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-number" data-count="50000" data-suffix="+">0+</div>
+            <div class="stat-label">Attendees</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About IFFC</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          The International Fashion Festival Canada (IFFC) is a premier global
+          platform that celebrates the fusion of high-end fashion, art, and
+          culture.
+        </p>
+
+        <div class="events-grid" style="margin-top: 4rem">
+          <div class="event-card" data-aos="fade-up">
+            <img
+              src="assets/images/about/global-impact.png"
+              alt="Global Impact"
+              class="event-image"
+            />
+            <div class="event-content">
+              <h3 class="event-title">Global Impact</h3>
+              <p class="event-location">
+                Connecting continents through fashion
+              </p>
+            </div>
+          </div>
+
+          <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="assets/images/about/cultural-fusion.png"
+              alt="Cultural Fusion"
+              class="event-image"
+            />
+            <div class="event-content">
+              <h3 class="event-title">Cultural Fusion</h3>
+              <p class="event-location">Celebrating diversity in design</p>
+            </div>
+          </div>
+
+          <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="assets/images/about/innovation.png"
+              alt="Innovation"
+              class="event-image"
+            />
+            <div class="event-content">
+              <h3 class="event-title">Innovation</h3>
+              <p class="event-location">Pushing creative boundaries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Designers Section -->
+    <section id="designers-showcase" class="section designers-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">DESIGNERS</h2>
+        <div class="designers-grid">
+          <div class="designer-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="designer-image">
+              <img
+                src="assets/images/designers/mayur-girotra.png"
+                alt="Mayyur Girotra"
+              />
+            </div>
+            <h3 class="designer-name">MAYYUR GIROTRA</h3>
+          </div>
+          <div class="designer-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="designer-image">
+              <img
+                src="assets/images/designers/nomi-ansari.png"
+                alt="Nomi Ansari"
+              />
+            </div>
+            <h3 class="designer-name">NOMI ANSARI</h3>
+          </div>
+          <div class="designer-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="designer-image">
+              <img
+                src="assets/images/designers/aleksandra-baranova.jpeg"
+                alt="Aleksandra Baranova"
+              />
+            </div>
+            <h3 class="designer-name">ALEKSANDRA BARANOVA</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events with Swiper Carousel -->
+    <section
+      id="events"
+      class="section"
+      style="background: rgba(255, 255, 255, 0.02)"
+    >
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Upcoming Events</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Join us at our world-class fashion events across the globe
+        </p>
+
+        <div
+          class="swiper eventsSwiper"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="event-card">
+                <img
+                  src="assets/images/upcoming-events/iffc-annual-gala.png"
+                  alt="iffc-annual-gala"
+                  class="event-image"
+                />
+                <div class="event-content">
+                  <div class="event-date">December 3, 2025</div>
+                  <h3 class="event-title">IFFC Annual Gala</h3>
+                  <p class="event-location">Montreal, Canada</p>
+                  <a href="#tickets" class="btn btn-outline">Get Tickets</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="event-card">
+                <img
+                  src="assets/images/upcoming-events/global-couture-exhibition.png"
+                  alt="global-couture-exhibition"
+                  class="event-image"
+                />
+                <div class="event-content">
+                  <div class="event-date">December 10, 2025</div>
+                  <h3 class="event-title">Global Couture Exhibition</h3>
+                  <p class="event-location">Vancouver, Canada</p>
+                  <a href="#tickets" class="btn btn-outline">Get Tickets</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="event-card">
+                <img
+                  src="assets/images/upcoming-events/toronto-fashion-week.png"
+                  alt="toronto-fashion-week"
+                  class="event-image"
+                />
+                <div class="event-content">
+                  <div class="event-date">December 15, 2025</div>
+                  <h3 class="event-title">Toronto Fashion Week</h3>
+                  <p class="event-location">Toronto, Canada</p>
+                  <a href="#tickets" class="btn btn-outline">Get Tickets</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="event-card">
+                <img
+                  src="assets/images/upcoming-events/brampton-fashion-festival.png"
+                  alt="brampton-fashion-festival"
+                  class="event-image"
+                />
+                <div class="event-content">
+                  <div class="event-date">December 27, 2025</div>
+                  <h3 class="event-title">Brampton Fashion Festival</h3>
+                  <p class="event-location">Brampton, Ontario, Canada</p>
+                  <a href="#tickets" class="btn btn-outline">Get Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Participate Section (Hover Accordion) -->
+    <section id="participate" class="section participate-section">
+      <div class="container-fluid p-0">
+        <div class="participate-header container mb-5">
+          <h2 class="section-title" data-aos="fade-right">
+            JOIN THE<br />EXPERIENCE
+          </h2>
+          <p class="section-subtitle" data-aos="fade-left" data-aos-delay="100">
+            Be part of the world's most prestigious fashion festival.
+          </p>
+        </div>
+
+        <div class="accordion-container">
+          <!-- Models -->
+          <!-- Designers -->
+          <a
+            href="#models"
+            class="accordion-item"
+            style="
+              background-image: url('assets/images/join-the-moment/model.jpeg');
+            "
+          >
+            <div class="accordion-overlay"></div>
+            <div class="accordion-content">
+              <span class="accordion-number">01</span>
+              <h3>Models</h3>
+              <p>Walk the runway</p>
+              <span class="accordion-btn">Cast Now</span>
+            </div>
+          </a>
+
+          <!-- Designers -->
+          <a
+            href="#designers"
+            class="accordion-item"
+            style="
+              background-image: url('assets/images/join-the-moment/aleksandra.jpeg');
+            "
+          >
+            <div class="accordion-overlay"></div>
+            <div class="accordion-content">
+              <span class="accordion-number">02</span>
+              <h3>Designers</h3>
+              <p>Showcase your collection to the world</p>
+              <span class="accordion-btn">Apply Now</span>
+            </div>
+          </a>
+
+          <!-- Exhibitors -->
+          <a
+            href="#exhibitors"
+            class="accordion-item"
+            style="
+              background-image: url('assets/images/join-the-moment/exhibitors.png');
+            "
+          >
+            <div class="accordion-overlay"></div>
+            <div class="accordion-content">
+              <span class="accordion-number">03</span>
+              <h3>Exhibitors</h3>
+              <p>Display your brand</p>
+              <span class="accordion-btn">Join Us</span>
+            </div>
+          </a>
+
+          <!-- Media -->
+          <a
+            href="#media"
+            class="accordion-item"
+            style="
+              background-image: url('assets/images/join-the-moment/media.png');
+            "
+          >
+            <div class="accordion-overlay"></div>
+            <div class="accordion-content">
+              <span class="accordion-number">04</span>
+              <h3>Media</h3>
+              <p>Cover the event</p>
+              <span class="accordion-btn">Get Access</span>
+            </div>
+          </a>
+
+          <!-- Volunteers -->
+          <a
+            href="#volunteers"
+            class="accordion-item"
+            style="
+              background-image: url('assets/images/join-the-moment/volunteer.png');
+            "
+          >
+            <div class="accordion-overlay"></div>
+            <div class="accordion-content">
+              <span class="accordion-number">05</span>
+              <h3>Volunteers</h3>
+              <p>Be the heartbeat</p>
+              <span class="accordion-btn">Support</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section with Masonry -->
+    <section
+      id="gallery"
+      class="section"
+      style="background: rgba(255, 255, 255, 0.02)"
+    >
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Gallery</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Experience the glamour and unforgettable moments from our events
+        </p>
+
+        <!-- Runway Shots -->
+        <div class="gallery-section">
+          <h3
+            class="section-title"
+            style="font-size: 2rem; margin-bottom: 2rem; text-align: left"
+            data-aos="fade-up"
+          >
+            Runway Shots
+          </h3>
+          <div
+            class="swiper gallerySwiper runwaySwiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-2.png"
+                  alt="Runway 2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-4.png"
+                  alt="Runway 4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-5.png"
+                  alt="Runway 5"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-6.png"
+                  alt="Runway 6"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-7.png"
+                  alt="Runway 6"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-8.png"
+                  alt="Runway 6"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-10.png"
+                  alt="Runway 6"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/runway-shots/shot-11.png"
+                  alt="Runway 6"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Backstage Moments -->
+        <div class="gallery-section">
+          <h3
+            class="section-title"
+            style="font-size: 2rem; margin-bottom: 2rem; text-align: left"
+            data-aos="fade-up"
+          >
+            Backstage Moments
+          </h3>
+          <div
+            class="swiper gallerySwiper backstageSwiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/backstage-moments/backstage-1.png"
+                  alt="Backstage 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/backstage-moments/backstage-3.jpeg"
+                  alt="Backstage 3"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/backstage-moments/backstage-4.jpeg"
+                  alt="Backstage 4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/backstage-moments/backstage-5.png"
+                  alt="Backstage 4"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- The 2026 Runway Schedule -->
+        <div class="gallery-section">
+          <h3
+            class="section-title"
+            style="font-size: 2rem; margin-bottom: 2rem; text-align: left"
+            data-aos="fade-up"
+          >
+            The 2026 Runway Schedule
+          </h3>
+          <div
+            class="swiper gallerySwiper redcarpetSwiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-1.jpeg"
+                  alt="Red Carpet 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-2.jpeg"
+                  alt="Red Carpet 2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-3.jpeg"
+                  alt="Red Carpet 3"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-4.jpeg"
+                  alt="Red Carpet 4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-5.jpeg"
+                  alt="Red Carpet 5"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-6.jpeg"
+                  alt="Red Carpet 6"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-7.jpeg"
+                  alt="Red Carpet 7"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-8.jpeg"
+                  alt="Red Carpet 8"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-9.jpeg"
+                  alt="Red Carpet 9"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/red-carpet/red-carpet-10.jpeg"
+                  alt="Red Carpet 10"
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: rgba(255, 255, 255, 0.02)">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">WHAT PEOPLE SAY</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          Hear from our community of designers, models, and fashion enthusiasts
+        </p>
+
+        <div
+          class="swiper reviewsSwiper"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="swiper-wrapper">
+            <!-- Review 1 -->
+            <div class="swiper-slide">
+              <div class="video-review-card">
+                <div class="video-wrapper">
+                  <video
+                    poster="assets/images/runway-shots/shot-2.png"
+                    playsinline
+                    loop
+                    muted
+                    onmouseover="this.play()"
+                    onmouseout="this.pause()"
+                  >
+                    <source
+                      src="./assets/videos/IFFC-teaser-03.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <div class="play-button">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="review-info">
+                  <h3>Sarah Chen</h3>
+                  <p>Fashion Designer</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="swiper-slide">
+              <div class="video-review-card">
+                <div class="video-wrapper">
+                  <video
+                    poster="assets/images/runway-shots/shot-4.png"
+                    playsinline
+                    loop
+                    muted
+                    onmouseover="this.play()"
+                    onmouseout="this.pause()"
+                  >
+                    <source
+                      src="./assets/videos/IFFC-teaser-03.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <div class="play-button">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="review-info">
+                  <h3>Marcus Johnson</h3>
+                  <p>Fashion Journalist</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="swiper-slide">
+              <div class="video-review-card">
+                <div class="video-wrapper">
+                  <video
+                    poster="assets/images/runway-shots/shot-5.png"
+                    playsinline
+                    loop
+                    muted
+                    onmouseover="this.play()"
+                    onmouseout="this.pause()"
+                  >
+                    <source
+                      src="./assets/videos/IFFC-teaser-03.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <div class="play-button">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="review-info">
+                  <h3>Priya Sharma</h3>
+                  <p>Model</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="swiper-slide">
+              <div class="video-review-card">
+                <div class="video-wrapper">
+                  <video
+                    poster="assets/images/runway-shots/shot-6.png"
+                    playsinline
+                    loop
+                    muted
+                    onmouseover="this.play()"
+                    onmouseout="this.pause()"
+                  >
+                    <source
+                      src="./assets/videos/IFFC-teaser-03.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                  <div class="play-button">
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+                <div class="review-info">
+                  <h3>David Miller</h3>
+                  <p>Event Coordinator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section
+      id="sponsors"
+      class="section"
+      style="background: rgba(255, 255, 255, 0.02)"
+    >
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Sponsors</h2>
+
+        <div class="sponsors-marquee-container">
+          <div class="sponsors-track">
+            <!-- Original Set -->
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/hum-world.png" alt="hum-world" />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/international-fashion.png"
+                alt="international-fashion"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/queen-manner.png"
+                alt="queen-manner"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/travel-arrangers.png"
+                alt="travel-arrangers"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/the-iffshow.png"
+                alt="the-iffshow"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/bramption.png" alt="bramption" />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/nanda.png" alt="nanda" />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/shimal.png" alt="shimal" />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/haier.png" alt="haier" />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/royal-delight.png"
+                alt="royal-delight"
+              />
+            </div>
+
+            <!-- Duplicate Set for Infinite Scroll -->
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/hum-world.png" alt="hum-world" />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/international-fashion.png"
+                alt="international-fashion"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/queen-manner.png"
+                alt="queen-manner"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/travel-arrangers.png"
+                alt="travel-arrangers"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/the-iffshow.png"
+                alt="the-iffshow"
+              />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/bramption.png" alt="bramption" />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/nanda.png" alt="nanda" />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/shimal.png" alt="shimal" />
+            </div>
+            <div class="sponsor-logo">
+              <img src="assets/images/sponsors/haier.png" alt="haier" />
+            </div>
+            <div class="sponsor-logo">
+              <img
+                src="assets/images/sponsors/royal-delight.png"
+                alt="royal-delight"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="text-align: center; margin-top: 4rem"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <a href="#sponsor-with-us" class="btn btn-primary"
+            >Become a Sponsor</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section - Improved Design -->
+    <section id="tickets" class="section cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+          <h2 class="section-title">READY TO JOIN IFFC ?</h2>
+          <p class="section-subtitle">
+            Don't miss the fashion event of the year. Secure your spot now!
+          </p>
+
+          <div class="hero-ctas" style="margin-top: 3rem">
+            <a href="#buy-tickets" class="btn btn-primary">Buy Tickets Now</a>
+            <a href="#participate" class="btn btn-outline"
+              >Apply to Participate</a
+            >
+            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer - Minimal & Attractive -->
+    <footer class="footer-minimal">
+      <div class="container">
+        <div class="social-dock">
+          <a
+            href="https://facebook.com/iffc"
+            target="_blank"
+            class="social-link"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://instagram.com/iffc"
+            target="_blank"
+            class="social-link"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/iffc"
+            target="_blank"
+            class="social-link"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://linkedin.com/company/iffc"
+            target="_blank"
+            class="social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://youtube.com/iffc"
+            target="_blank"
+            class="social-link"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <p class="copyright-text">© 2025 IFFC</p>
+      </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Floating Ticket Banner -->
+    <div class="floating-banner" id="ticketBanner">
+      <button class="banner-close" onclick="closeBanner()">&times;</button>
+      <div class="banner-content">
+        <img
+          src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=1200&h=800&fit=crop&q=80"
+          alt="IFFC Event"
+          class="banner-image"
+        />
+        <div class="banner-text">
+          <h3>Get Your Tickets Now!</h3>
+          <p>Don't miss the biggest fashion event of the year</p>
+          <a href="#tickets" class="btn btn-secondary" onclick="closeBanner()"
+            >Buy Tickets</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
