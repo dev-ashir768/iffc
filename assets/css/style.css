@@ -1985,3 +1985,127 @@ img {
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
+
+/* ===================================
+   Archive Gallery
+   =================================== */
+.archive-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%;
+  height: 600px;
+}
+
+.archive-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.archive-card:hover img {
+  transform: scale(1.1);
+}
+
+.archive-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.5) 40%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  padding-bottom: 3rem;
+}
+
+.archive-card:hover .archive-overlay {
+  opacity: 1;
+}
+
+.archive-year {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease 0.1s;
+  background: var(--iffc-emerald-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.archive-content {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease 0.15s;
+}
+
+.archive-card:hover .archive-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.archive-btn {
+  padding: 1rem 2.5rem;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.4s ease 0.2s;
+}
+
+.archive-btn:hover {
+  background: var(--iffc-emerald-gradient);
+  border-color: transparent;
+  color: black;
+}
+
+.archive-card:hover .archive-year,
+.archive-card:hover .archive-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Archive Swiper Specifics */
+.archiveSwiper {
+  padding-bottom: 50px !important;
+}
+
+.archiveSwiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.archiveSwiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.archiveSwiper .swiper-pagination-bullet-active {
+  background: var(--iffc-emerald-gradient);
+  width: 30px;
+  border-radius: 6px;
+}
