@@ -478,32 +478,6 @@
       watchSlidesVisibility: true,
     });
 
-    const redcarpetSwiper = new Swiper(".redcarpetSwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".redcarpetSwiper .swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-      watchSlidesProgress: true,
-      watchSlidesVisibility: true,
-    });
-
     const reviewsSwiper = new Swiper(".reviewsSwiper", {
       slidesPerView: 1,
       spaceBetween: 30,

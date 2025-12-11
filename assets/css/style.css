@@ -4,11 +4,11 @@
 
 /* CSS Variables */
 :root {
-  --iffc-green: #00a676;
-  --iffc-emerald-gradient: linear-gradient(135deg, #00a676 0%, #004d36 100%);
-  --iffc-black: #050505;
-  --iffc-gray: #1a1a1a;
-  --iffc-light-gray: #2a2a2a;
+  --iffc-green: #c9a961;
+  --iffc-emerald-gradient: linear-gradient(135deg, #c9a961 0%, #a68a4f 100%);
+  --iffc-black: #0a1514;
+  --iffc-gray: #1a2624;
+  --iffc-light-gray: #2a3634;
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.2s ease;
 }
@@ -30,7 +30,7 @@
 body {
   background-color: var(--iffc-black);
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: "Cinzel", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   font-weight: 700;
 }
 
@@ -160,12 +160,12 @@ img {
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   z-index: 1000;
-  background: rgba(5, 5, 5, 0.95);
+  padding: 1.2rem 0;
+  background: rgba(10, 21, 20, 0.95);
   backdrop-filter: blur(10px);
-  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(201, 169, 97, 0.1);
   transition: var(--transition-smooth);
 }
 
@@ -185,7 +185,7 @@ img {
 
 .logo {
   font-size: 2.5rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   letter-spacing: -0.05em;
   transition: var(--transition-fast);
 }
@@ -246,7 +246,7 @@ img {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(26, 26, 26, 0.98);
+  background: rgba(26, 38, 36, 0.98);
   backdrop-filter: blur(10px);
   min-width: 200px;
   padding: 1rem 0;
@@ -254,7 +254,7 @@ img {
   visibility: hidden;
   transform: translateY(-10px);
   transition: var(--transition-smooth);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(201, 169, 97, 0.2);
   margin-top: 1rem;
 }
 
@@ -535,7 +535,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   margin-bottom: 0.5rem;
 }
 
@@ -940,8 +940,8 @@ img {
 .cta-section {
   background: linear-gradient(
     135deg,
-    rgba(0, 166, 118, 0.1) 0%,
-    rgba(5, 5, 5, 0.9) 100%
+    rgba(201, 169, 97, 0.1) 0%,
+    rgba(10, 21, 20, 0.9) 100%
   );
   position: relative;
   overflow: hidden;
@@ -956,7 +956,7 @@ img {
   height: 100%;
   background: radial-gradient(
     circle,
-    rgba(0, 166, 118, 0.1) 0%,
+    rgba(201, 169, 97, 0.1) 0%,
     transparent 70%
   );
   animation: pulse 4s ease-in-out infinite;
@@ -969,6 +969,22 @@ img {
   max-width: 900px;
   margin: 0 auto;
   padding: 4rem 2rem;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-ctas .btn {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
 }
 
 /* Masonry Grid */
@@ -1072,8 +1088,6 @@ img {
 .runwaySwiper .swiper-button-prev,
 .backstageSwiper .swiper-button-next,
 .backstageSwiper .swiper-button-prev,
-.redcarpetSwiper .swiper-button-next,
-.redcarpetSwiper .swiper-button-prev,
 .eventsSwiper .swiper-button-next,
 .eventsSwiper .swiper-button-prev {
   background: var(--iffc-emerald-gradient) !important;
@@ -1374,7 +1388,7 @@ img {
    =================================== */
 .designers-section {
   padding: 6rem 0;
-  background-color: #050505;
+  background-color: #0a1514;
 }
 
 .designers-grid {
@@ -1416,7 +1430,7 @@ img {
 }
 
 .designer-name {
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   font-size: 1.1rem;
   letter-spacing: 0.1em;
   color: #fff;
@@ -1446,7 +1460,7 @@ img {
    =================================== */
 .participate-section {
   padding: 8rem 0;
-  background-color: #0a0a0a;
+  background-color: #0a1514;
   overflow: hidden;
 }
 
@@ -1534,7 +1548,7 @@ img {
 }
 
 .accordion-number {
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   font-size: 1.5rem;
   background: var(--iffc-emerald-gradient);
   -webkit-background-clip: text;
@@ -1546,7 +1560,7 @@ img {
 }
 
 .accordion-content h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   font-size: 1.8rem;
   color: #fff;
   margin-bottom: 0.5rem;
@@ -1706,7 +1720,7 @@ img {
 }
 
 .card-content h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   font-size: 2rem;
   color: #fff;
   margin-bottom: 0.5rem;
@@ -1934,8 +1948,8 @@ img {
    =================================== */
 .footer-minimal {
   padding: 4rem 0;
-  background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.8));
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to top, #0a1514, rgba(10, 21, 20, 0.8));
+  border-top: 1px solid rgba(201, 169, 97, 0.1);
   margin-top: 4rem;
 }
 
@@ -2035,7 +2049,7 @@ img {
 }
 
 .archive-year {
-  font-family: "Playfair Display", serif;
+  font-family: "Cinzel", serif;
   font-size: 3rem;
   font-weight: 700;
   color: white;
