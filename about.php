@@ -332,7 +332,7 @@ include 'includes/header.php';
         <div class="timeline-content">
           <span class="timeline-year">2024</span>
           <h3 class="timeline-title">Brampton Fashion Festival</h3>
-          <p class="timeline-location">City Hall, Brampton | June 22</p>
+          <p class="timeline-location">City Hall, Brampton</p>
         </div>
       </div>
 
@@ -341,21 +341,48 @@ include 'includes/header.php';
         <div class="timeline-content">
           <span class="timeline-year">2023</span>
           <h3 class="timeline-title">International Fashion Festival</h3>
-          <p class="timeline-location">Riga, Latvia | IFFC Canada</p>
+          <p class="timeline-location">Riga, Latvia</p>
         </div>
       </div>
 
       <!-- Item 3 -->
       <div class="timeline-item timeline-left">
         <div class="timeline-content">
-          <span class="timeline-year">2022</span>
-          <h3 class="timeline-title">Fashion Festival Canada</h3>
-          <p class="timeline-location">Toronto | Cannes, France | Islamabad</p>
+          <span class="timeline-year">2023</span>
+          <h3 class="timeline-title">International Fashion Festival Canada</h3>
+          <p class="timeline-location">Canada</p>
         </div>
       </div>
 
       <!-- Item 4 -->
       <div class="timeline-item timeline-right">
+        <div class="timeline-content">
+          <span class="timeline-year">2022</span>
+          <h3 class="timeline-title">Fashion Festival Canada</h3>
+          <p class="timeline-location">Toronto</p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="timeline-item timeline-left">
+        <div class="timeline-content">
+          <span class="timeline-year">2022</span>
+          <h3 class="timeline-title">International Fashion Festival</h3>
+          <p class="timeline-location">Cannes, France</p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="timeline-item timeline-right">
+        <div class="timeline-content">
+          <span class="timeline-year">2022</span>
+          <h3 class="timeline-title">International Fashion Festival Pakistan</h3>
+          <p class="timeline-location">Islamabad</p>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="timeline-item timeline-left">
         <div class="timeline-content">
           <span class="timeline-year">2020</span>
           <h3 class="timeline-title">International Fashion Festival</h3>
@@ -363,8 +390,8 @@ include 'includes/header.php';
         </div>
       </div>
 
-      <!-- Item 5 - Range -->
-      <div class="timeline-item timeline-left">
+      <!-- Item 8 -->
+      <div class="timeline-item timeline-right">
         <div class="timeline-content">
           <span class="timeline-year">2011 - 2019</span>
           <h3 class="timeline-title">International Fashion Festival</h3>
@@ -372,8 +399,8 @@ include 'includes/header.php';
         </div>
       </div>
 
-      <!-- Item 6 -->
-      <div class="timeline-item timeline-right">
+      <!-- Item 9 -->
+      <div class="timeline-item timeline-left">
         <div class="timeline-content">
           <span class="timeline-year">2017</span>
           <h3 class="timeline-title">PCBC Business Expo</h3>
@@ -381,8 +408,8 @@ include 'includes/header.php';
         </div>
       </div>
 
-      <!-- Item 7 -->
-      <div class="timeline-item timeline-left">
+      <!-- Item 10 -->
+      <div class="timeline-item timeline-right">
         <div class="timeline-content">
           <span class="timeline-year">2015</span>
           <h3 class="timeline-title">Pakistan Fashion Festival USA</h3>
@@ -390,8 +417,26 @@ include 'includes/header.php';
         </div>
       </div>
 
-      <!-- Item 8 -->
+      <!-- Item 11 -->
+      <div class="timeline-item timeline-left">
+        <div class="timeline-content">
+          <span class="timeline-year">2009 - 2010</span>
+          <h3 class="timeline-title">Dubai Fashion Week</h3>
+          <p class="timeline-location">Dubai</p>
+        </div>
+      </div>
+
+      <!-- Item 12 -->
       <div class="timeline-item timeline-right">
+        <div class="timeline-content">
+          <span class="timeline-year">2009</span>
+          <h3 class="timeline-title">Bride & Groom Exhibition</h3>
+          <p class="timeline-location">Delhi, India</p>
+        </div>
+      </div>
+
+      <!-- Item 13 -->
+      <div class="timeline-item timeline-left">
         <div class="timeline-content">
           <span class="timeline-year">2010 - 2011</span>
           <h3 class="timeline-title">Bridal Couture Week</h3>
@@ -399,21 +444,12 @@ include 'includes/header.php';
         </div>
       </div>
 
-      <!-- Item 9 -->
-      <div class="timeline-item timeline-left">
-        <div class="timeline-content">
-          <span class="timeline-year">2009 - 2010</span>
-          <h3 class="timeline-title">Dubai Fashion Week | Bride & Groom</h3>
-          <p class="timeline-location">Dubai | Delhi, India</p>
-        </div>
-      </div>
-
-      <!-- Item 10 -->
+      <!-- Item 14 -->
       <div class="timeline-item timeline-right">
         <div class="timeline-content">
           <span class="timeline-year">2004 - 2006</span>
-          <h3 class="timeline-title">International Fashion Festival</h3>
-          <p class="timeline-location">Lahore, Pakistan</p>
+          <h3 class="timeline-title">International Fashion Festival Pakistan</h3>
+          <p class="timeline-location">Lahore</p>
         </div>
       </div>
     </div>
