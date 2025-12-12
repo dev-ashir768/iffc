@@ -28,36 +28,12 @@ include 'includes/header.php';
 <!-- About Section -->
 <section id="about" class="section">
   <div class="container">
-    <!-- Our Story -->
-    <div class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4rem; margin-bottom: 6rem;">
-      <div class="col-text" style="flex: 1; min-width: 300px" data-aos="fade-right">
-        <h2 class="section-title" style="text-align: left">Our Story</h2>
-        <div class="story-content" style="line-height: 1.8; color: #d1d5db;">
-          <p style="margin-bottom: 1.5rem">
-            IFF began as a concept on Style360 TV and evolved into a global
-            fashion platform, celebrating culture, creativity, and
-            craftsmanship across continents.
-          </p>
-          <p>
-            Today, IFFC stands as a bridge between Pakistan, Canada, Europe,
-            and South Asia, empowering designers, talent, and brands to
-            connect internationally.
-          </p>
-          <a href="about" class="btn btn-outline" style="margin-top: 1.5rem">Read Full Story</a>
-        </div>
-      </div>
-      <div class="col-image" style="flex: 1; min-width: 300px" data-aos="fade-left">
-        <div class="image-frame-premium" style="position: relative;">
-          <img src="assets/images/runway-shots/shot-4.png" alt="Our Story"
-            style="width: 100%; border-radius: 4px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);" />
-        </div>
-      </div>
-    </div>
 
-    <!-- Global Impact -->
-    <h2 class="section-title" data-aos="fade-up">Global Impact</h2>
+    <!-- About IFFC -->
+    <h2 class="section-title" data-aos="fade-up">About IFFC</h2>
     <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-      Creating Opportunities & Connections
+      International Fashion Festival Canada (IFFC) is an international stage for fashion, culture, and creative
+      exchange.
     </p>
 
     <div class="impact-grid" data-aos="fade-up" data-aos-delay="200">
@@ -89,56 +65,6 @@ include 'includes/header.php';
         </div>
       </div>
     </div>
-
-    <!-- Leadership Teaser -->
-    <div style="margin-top: 6rem;">
-      <h2 class="section-title" data-aos="fade-up">Leadership & Team</h2>
-      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-        Visionaries behind the movement
-      </p>
-
-      <div class="team-grid">
-        <!-- Member 1 -->
-        <div class="team-card" data-aos="fade-up">
-          <div class="team-image">
-            <img src="https://placehold.co/400x500/1a2624/c9a961?text=Alina+Khan" alt="Alina Khan">
-          </div>
-          <div class="team-info">
-            <h3>Alina Khan</h3>
-            <span class="team-role">Founder & CEO</span>
-            <p class="team-bio">Visionary leader with over 15 years in global fashion management.</p>
-          </div>
-        </div>
-
-        <!-- Member 2 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-image">
-            <img src="https://placehold.co/400x500/1a2624/c9a961?text=David+SP" alt="David Saint-Pierre">
-          </div>
-          <div class="team-info">
-            <h3>David Saint-Pierre</h3>
-            <span class="team-role">Creative Director</span>
-            <p class="team-bio">Award-winning creative directing immersive fashion experiences.</p>
-          </div>
-        </div>
-
-        <!-- Member 3 -->
-        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-image">
-            <img src="https://placehold.co/400x500/1a2624/c9a961?text=Sarah+Ahmed" alt="Sarah Ahmed">
-          </div>
-          <div class="team-info">
-            <h3>Sarah Ahmed</h3>
-            <span class="team-role">Head of Partnerships</span>
-            <p class="team-bio">Building bridges between brands and international markets.</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="about" class="btn btn-outline">Meet the Full Team</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -165,6 +91,12 @@ include 'includes/header.php';
         </div>
         <h3 class="designer-name">ALEKSANDRA BARANOVA</h3>
       </div>
+      <div class="designer-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="designer-image">
+          <img src="assets/images/designers/moel-bosh.jpeg" alt="Moel Bosh" />
+        </div>
+        <h3 class="designer-name">MOEL BOSH</h3>
+      </div>
     </div>
   </div>
 </section>
@@ -181,11 +113,11 @@ include 'includes/header.php';
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="event-card">
-            <img src="assets/images/upcoming-events/iffc-annual-gala.png" alt="iffc-annual-gala" class="event-image" />
+            <img src="assets/images/upcoming-events/toronto.jpeg" alt="iffc-annual-gala" class="event-image" />
             <div class="event-content">
-              <div class="event-date">December 3, 2025</div>
-              <h3 class="event-title">IFFC Annual Gala</h3>
-              <p class="event-location">Montreal, Canada</p>
+              <div class="event-date">May 4, 2025</div>
+              <h3 class="event-title">Toronto Fashion Week</h3>
+              <p class="event-location">Toronto, Canada</p>
               <a href="#tickets" class="btn btn-outline">Get Tickets</a>
             </div>
           </div>
