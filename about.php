@@ -171,7 +171,7 @@ include 'includes/header.php';
                 margin-bottom: 1.5rem;
                 position: relative;
               ">
-          <img src="https://placehold.co/400x500/1a2624/c9a961?text=Alina+Khan" alt="Alina Khan" style="
+          <img src="/assets/images/leadership/omar-qamar.png" alt="Omar Qamar" style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
@@ -180,7 +180,7 @@ include 'includes/header.php';
                 " />
         </div>
         <div class="team-info" style="text-align: center">
-          <h3 style="margin-bottom: 0.5rem; color: #c9a961">Alina Khan</h3>
+          <h3 style="margin-bottom: 0.5rem; color: #c9a961">Omar Qamar</h3>
           <p style="
                   text-transform: uppercase;
                   letter-spacing: 0.1em;
@@ -188,15 +188,14 @@ include 'includes/header.php';
                   color: #9ca3af;
                   margin-bottom: 1rem;
                 ">
-            Founder & CEO
+            Founder- Director
           </p>
           <p style="
                   font-size: 0.9rem;
                   color: #6b7280;
                   line-height: 1.6;
                 ">
-            Visionary leader with over 15 years in global fashion
-            management.
+            Driving the vision of IFFC to connect cultures through fashion.
           </p>
         </div>
       </div>
@@ -209,7 +208,7 @@ include 'includes/header.php';
                 margin-bottom: 1.5rem;
                 position: relative;
               ">
-          <img src="https://placehold.co/400x500/1a2624/c9a961?text=David+SP" alt="David Saint-Pierre" style="
+          <img src="/assets/images/leadership/nomi-qamar.png" alt="Nomi Qamar" style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
@@ -219,7 +218,7 @@ include 'includes/header.php';
         </div>
         <div class="team-info" style="text-align: center">
           <h3 style="margin-bottom: 0.5rem; color: #c9a961">
-            David Saint-Pierre
+            Nomi Qamar
           </h3>
           <p style="
                   text-transform: uppercase;
@@ -235,7 +234,7 @@ include 'includes/header.php';
                   color: #6b7280;
                   line-height: 1.6;
                 ">
-            Award-winning creative directing immersive fashion experiences.
+            Leading creative direction and immersive fashion experiences.
           </p>
         </div>
       </div>
@@ -248,7 +247,7 @@ include 'includes/header.php';
                 margin-bottom: 1.5rem;
                 position: relative;
               ">
-          <img src="https://placehold.co/400x500/1a2624/c9a961?text=Sarah+Ahmed" alt="Sarah Ahmed" style="
+          <img src="/assets/images/leadership/amirJ.Khan.png" alt="Amir J. Khan" style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
@@ -257,7 +256,7 @@ include 'includes/header.php';
                 " />
         </div>
         <div class="team-info" style="text-align: center">
-          <h3 style="margin-bottom: 0.5rem; color: #c9a961">Sarah Ahmed</h3>
+          <h3 style="margin-bottom: 0.5rem; color: #c9a961">Amir J. Khan</h3>
           <p style="
                   text-transform: uppercase;
                   letter-spacing: 0.1em;
@@ -265,14 +264,14 @@ include 'includes/header.php';
                   color: #9ca3af;
                   margin-bottom: 1rem;
                 ">
-            Head of Partnerships
+            CEO
           </p>
           <p style="
                   font-size: 0.9rem;
                   color: #6b7280;
                   line-height: 1.6;
                 ">
-            Building bridges between brands and international markets.
+            Spearheading strategic growth and international partnerships.
           </p>
         </div>
       </div>
@@ -284,7 +283,8 @@ include 'includes/header.php';
                 margin-bottom: 1.5rem;
                 position: relative;
               ">
-          <img src="https://placehold.co/400x500/1a2624/c9a961?text=Advisory+Board" alt="Global Advisory" style="
+          <img src="/assets/images/leadership/aleksandra-baranova.jpeg" alt="Aleksandra Baranova"
+            style="
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
@@ -294,7 +294,7 @@ include 'includes/header.php';
         </div>
         <div class="team-info" style="text-align: center">
           <h3 style="margin-bottom: 0.5rem; color: #c9a961">
-            Global Advisory
+            Aleksandra Baranova
           </h3>
           <p style="
                   text-transform: uppercase;
@@ -303,14 +303,14 @@ include 'includes/header.php';
                   color: #9ca3af;
                   margin-bottom: 1rem;
                 ">
-            Board Members
+            Global Director
           </p>
           <p style="
                   font-size: 0.9rem;
                   color: #6b7280;
                   line-height: 1.6;
                 ">
-            A collective of industry veterans guiding IFFC's mission.
+            Expanding IFFC's global footprint and director initiatives.
           </p>
         </div>
       </div>
