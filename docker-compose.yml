@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  php:
+    build: .
+    container_name: iffc_website
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - iffc-network
+      - web_network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.iffc-php.rule=Host(`iffc.test`)"
+      - "traefik.http.routers.iffc-php.entrypoints=web"
+      - "traefik.http.services.iffc-php.loadbalancer.server.port=80"
+      - "traefik.docker.network=web_network"
+
+networks:
+  iffc-network:
+    driver: bridge
+  web_network:
+    external: true
