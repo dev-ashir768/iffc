@@ -399,6 +399,7 @@
     // Initialize Swiper Carousel
     // ===================================
 
+    // Events Swiper (Homepage & Events Page)
     const eventsSwiper = new Swiper(".eventsSwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -425,7 +426,7 @@
       allowTouchMove: true,
     });
 
-    // Gallery Swipers
+    // Runway Swiper (Homepage)
     const runwaySwiper = new Swiper(".runwaySwiper", {
       slidesPerView: 1,
       spaceBetween: 40,
@@ -452,6 +453,7 @@
       watchSlidesVisibility: true,
     });
 
+    // Backstage Swiper (Homepage)
     const backstageSwiper = new Swiper(".backstageSwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
@@ -478,6 +480,7 @@
       watchSlidesVisibility: true,
     });
 
+    // Reviews Swiper (Homepage)
     const reviewsSwiper = new Swiper(".reviewsSwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -488,6 +491,60 @@
       },
       pagination: {
         el: ".reviewsSwiper .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+    // Gallery Swiper (Events Page - IFFC Canada Gallery)
+    const gallerySwiper = new Swiper(".gallerySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".gallerySwiper .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+      },
+    });
+
+    // Archive Swiper (Events Page - Past Events Archive)
+    const archiveSwiper = new Swiper(".archiveSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".archiveSwiper .swiper-pagination",
         clickable: true,
       },
       breakpoints: {

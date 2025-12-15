@@ -830,6 +830,108 @@ img {
   }
 }
 
+/* ===================================
+   Delegations Marquee (Events Page)
+   =================================== */
+.delegations-marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 3rem 0;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.delegations-track {
+  display: flex;
+  width: max-content;
+  animation: delegationsScroll 50s linear infinite;
+}
+
+.delegations-track:hover {
+  animation-play-state: paused;
+}
+
+.delegation-card {
+  flex: 0 0 auto;
+  width: 180px;
+  padding: 2rem 1.5rem;
+  margin: 0 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.delegation-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--iffc-green);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.delegation-flag {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.delegation-card:hover .delegation-flag {
+  transform: scale(1.2);
+}
+
+.delegation-name {
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.05em;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.delegation-card:hover .delegation-name {
+  color: var(--iffc-green);
+}
+
+@keyframes delegationsScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Delegations Marquee */
+@media (max-width: 768px) {
+  .delegation-card {
+    width: 140px;
+    padding: 1.5rem 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .delegation-flag {
+    font-size: 3rem;
+  }
+
+  .delegation-name {
+    font-size: 0.95rem;
+  }
+}
+
 /* Footer */
 .footer {
   background: var(--iffc-gray);
@@ -1037,60 +1139,9 @@ img {
 }
 
 /* Swiper Customization */
-.swiper-button-next,
-.swiper-button-prev {
-  width: 60px !important;
-  height: 60px !important;
-  background: var(--iffc-emerald-gradient) !important;
-  border-radius: 50% !important;
-  color: white !important;
-  box-shadow: 0 8px 25px rgba(0, 166, 118, 0.3) !important;
-  transition: all 0.3s ease !important;
-  z-index: 10 !important;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background: var(--iffc-emerald-gradient) !important;
-  border-color: transparent !important;
-  transform: scale(1.1) !important;
-  box-shadow: 0 12px 35px rgba(0, 166, 118, 0.5) !important;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 20px !important;
-  background: var(--iffc-emerald-gradient) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  font-weight: bold !important;
-}
-
-.swiper-button-next:hover:after,
-.swiper-button-prev:hover:after {
-  color: var(--iffc-black) !important;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 1.5rem !important;
-  font-weight: bold !important;
-  color: white !important;
-}
-
 .swiper-button-disabled {
   opacity: 0.5 !important;
   cursor: not-allowed !important;
-}
-
-.runwaySwiper .swiper-button-next,
-.runwaySwiper .swiper-button-prev,
-.backstageSwiper .swiper-button-next,
-.backstageSwiper .swiper-button-prev,
-.eventsSwiper .swiper-button-next,
-.eventsSwiper .swiper-button-prev {
-  background: var(--iffc-emerald-gradient) !important;
 }
 
 /* Gallery Swiper specific styles */
@@ -1830,16 +1881,6 @@ img {
 @media (max-width: 480px) {
   .masonry-grid {
     column-count: 1;
-  }
-}
-
-@media (min-width: 1024px) {
-  .swiper-button-next {
-    right: -30px !important;
-  }
-
-  .swiper-button-prev {
-    left: -30px !important;
   }
 }
 
@@ -2603,4 +2644,331 @@ img {
   background: var(--iffc-green);
   vertical-align: middle;
   margin: 0 10px;
+}
+
+/* ===================================
+   EVENTS PAGE SPECIFIC STYLES
+   =================================== */
+
+/* Page Hero Variant */
+.page-hero {
+  min-height: 70vh;
+  padding-top: 100px;
+}
+
+/* Event Badge */
+.event-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(201, 169, 97, 0.1);
+  border: 1px solid rgba(201, 169, 97, 0.3);
+  border-radius: 50px;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--iffc-green);
+}
+
+/* Event Stats Cards */
+.event-stat-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.event-stat-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--iffc-green);
+  transform: translateY(-5px);
+}
+
+.event-stat-number {
+  font-size: 2rem;
+  color: var(--iffc-green);
+  font-weight: 700;
+  font-family: "Cinzel", serif;
+}
+
+.event-stat-label {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Location Highlight Cards */
+.location-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--iffc-green);
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.location-card:hover {
+  background: rgba(201, 169, 97, 0.05);
+  transform: translateX(5px);
+}
+
+.location-card h4 {
+  color: var(--iffc-green);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.location-card p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* Announcement Cards */
+.announcement-card {
+  padding: 2rem;
+  background: rgba(201, 169, 97, 0.05);
+  border-left: 4px solid var(--iffc-green);
+  margin-bottom: 1.5rem;
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s ease;
+}
+
+.announcement-card:hover {
+  background: rgba(201, 169, 97, 0.08);
+  transform: translateX(5px);
+}
+
+.announcement-card.secondary {
+  background: rgba(255, 255, 255, 0.02);
+  border-left-color: rgba(201, 169, 97, 0.5);
+}
+
+.announcement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.announcement-badge {
+  background: var(--iffc-green);
+  color: var(--iffc-black);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+/* Press Card */
+.press-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.press-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--iffc-green);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.press-card-header {
+  height: 200px;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 169, 97, 0.2),
+    rgba(10, 21, 20, 0.8)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.press-card-header i {
+  font-size: 4rem;
+  color: var(--iffc-green);
+}
+
+.press-card-body {
+  padding: 2rem;
+}
+
+.press-card-body h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.press-card-body p {
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.press-link {
+  color: var(--iffc-green);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.press-link:hover {
+  padding-left: 5px;
+}
+
+/* Country Flag Card */
+.country-card {
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.country-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--iffc-green);
+  transform: translateY(-5px);
+}
+
+.country-flag {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.country-name {
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Designer Archive List */
+.designer-archive-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  columns: 3;
+  column-gap: 2rem;
+}
+
+.designer-archive-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 2px solid var(--iffc-green);
+  border-radius: 0 4px 4px 0;
+  transition: all 0.3s ease;
+}
+
+.designer-archive-item:hover {
+  background: rgba(201, 169, 97, 0.05);
+  transform: translateX(5px);
+}
+
+.designer-archive-item h5 {
+  color: var(--iffc-green);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.designer-archive-item p {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+/* Registration CTA Box */
+.registration-cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 169, 97, 0.15),
+    rgba(10, 21, 20, 0.8)
+  );
+  border-radius: 12px;
+  border: 1px solid rgba(201, 169, 97, 0.3);
+}
+
+.registration-cta h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.registration-cta p {
+  color: #d1d5db;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.registration-cta .btn-group {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Objective Card */
+.objective-card {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+.objective-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--iffc-green);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.objective-icon {
+  font-size: 2.5rem;
+  color: var(--iffc-green);
+  margin-bottom: 1.5rem;
+}
+
+.objective-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.objective-card p {
+  color: #9ca3af;
+  line-height: 1.7;
+}
+
+/* Mobile Responsive for Events Page */
+@media (max-width: 768px) {
+  .designer-archive-list {
+    columns: 1;
+  }
+
+  .announcement-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .registration-cta .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registration-cta .btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }

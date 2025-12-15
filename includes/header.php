@@ -59,6 +59,10 @@ if (!isset($page_desc)) {
   if ($request_uri == '/about' || $request_uri == '/about.php') {
     $current_page = 'about.php';
   }
+  // Check for events
+  if ($request_uri == '/events' || $request_uri == '/events.php') {
+    $current_page = 'events.php';
+  }
   ?>
 </head>
 
@@ -86,11 +90,11 @@ if (!isset($page_desc)) {
         </li>
 
         <li class="nav-item dropdown">
-          <a href="./#events" class="nav-link">Events</a>
+          <a href="events" class="nav-link <?php echo ($current_page == 'events.php') ? 'active' : ''; ?>">Events</a>
           <ul class="dropdown-menu">
-            <li><a href="./#iffc-canada">IFFC Canada</a></li>
-            <li><a href="./#iff-europe">IFF Europe</a></li>
-            <li><a href="./#past-events">Past Events Archive</a></li>
+            <li><a href="events#iffc-canada">IFFC Canada</a></li>
+            <li><a href="events#iff-europe">IFF Europe</a></li>
+            <li><a href="events#past-events">Past Events Archive</a></li>
           </ul>
         </li>
 
