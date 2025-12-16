@@ -412,6 +412,10 @@
         el: ".eventsSwiper .swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        nextEl: ".eventsSwiper .swiper-button-next",
+        prevEl: ".eventsSwiper .swiper-button-prev",
+      },
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -439,6 +443,10 @@
         el: ".runwaySwiper .swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        nextEl: ".runwaySwiper .swiper-button-next",
+        prevEl: ".runwaySwiper .swiper-button-prev",
+      },
       breakpoints: {
         768: {
           slidesPerView: 2,
@@ -465,6 +473,10 @@
       pagination: {
         el: ".backstageSwiper .swiper-pagination",
         clickable: true,
+      },
+      navigation: {
+        nextEl: ".backstageSwiper .swiper-button-next",
+        prevEl: ".backstageSwiper .swiper-button-prev",
       },
       breakpoints: {
         768: {
@@ -522,6 +534,10 @@
         el: ".gallerySwiper .swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        nextEl: ".gallerySwiper .swiper-button-next",
+        prevEl: ".gallerySwiper .swiper-button-prev",
+      },
       breakpoints: {
         768: {
           slidesPerView: 1,
@@ -547,6 +563,10 @@
         el: ".archiveSwiper .swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        nextEl: ".archiveSwiper .swiper-button-next",
+        prevEl: ".archiveSwiper .swiper-button-prev",
+      },
       breakpoints: {
         640: {
           slidesPerView: 1,
@@ -561,6 +581,271 @@
           spaceBetween: 30,
         },
       },
+    });
+
+    // Sponsor Testimonials Swiper (Sponsors Page)
+    const sponsorTestimonialsSwiper = new Swiper(".sponsorTestimonialsSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".sponsorTestimonialsSwiper .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".sponsorTestimonialsSwiper .swiper-button-next",
+        prevEl: ".sponsorTestimonialsSwiper .swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+    // ===================================
+    // FAQ Accordion (Contact Page & Tickets Page)
+    // ===================================
+    
+    $(document).on("click", ".faq-question", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      var $faqItem = $(this).parent(".faq-item");
+      var isActive = $faqItem.hasClass("active");
+      
+      // Close all FAQ items
+      $(".faq-item").removeClass("active");
+      $(".faq-answer").slideUp(300);
+      
+      // If this item wasn't active, open it
+      if (!isActive) {
+        $faqItem.addClass("active");
+        $faqItem.find(".faq-answer").slideDown(300);
+      }
+    });
+
+    // ===================================
+    // Event Selector (Tickets Page)
+    // ===================================
+    
+    $(".event-selector-btn").on("click", function () {
+      $(".event-selector-btn").removeClass("active");
+      $(this).addClass("active");
+      
+      var eventType = $(this).data("event");
+      console.log("Selected event:", eventType);
+      // You can add logic here to update ticket prices based on event
+    });
+
+    // ===================================
+    // Countdown Timer (Tickets Page)
+    // ===================================
+    
+    function updateCountdown() {
+      // Set target date (March 31, 2025)
+      var targetDate = new Date("March 31, 2025 23:59:59").getTime();
+      var now = new Date().getTime();
+      var distance = targetDate - now;
+
+      if (distance > 0) {
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        $("#days").text(days);
+        $("#hours").text(hours);
+        $("#mins").text(minutes);
+      } else {
+        $(".countdown-timer").hide();
+        $(".early-bird-banner h3").text("Early Bird Offer Ended");
+      }
+    }
+
+    // Update countdown every minute
+    if ($(".countdown-timer").length) {
+      updateCountdown();
+      setInterval(updateCountdown, 60000);
+    }
+
+    // ===================================
+    // Seating Selection (Tickets Page)
+    // ===================================
+    
+    $(".seat.available").on("click", function () {
+      $(this).toggleClass("selected");
+      updateSelectedSeats();
+    });
+
+    function updateSelectedSeats() {
+      var selectedCount = $(".seat.selected").length;
+      console.log("Selected seats:", selectedCount);
+      // You can update a total price display here
+    }
+
+    // ===================================
+    // Form Submission Handlers
+    // ===================================
+    
+    $("#contactForm, #sponsorshipForm").on("submit", function (e) {
+      e.preventDefault();
+      
+      var formData = $(this).serialize();
+      console.log("Form submitted:", formData);
+      
+      // Show success message
+      alert("Thank you for your message! We'll get back to you within 24 hours.");
+      
+      // Reset form
+      this.reset();
+      
+      // In production, you would send this to your backend
+      // $.ajax({
+      //   url: '/api/contact',
+      //   method: 'POST',
+      //   data: formData,
+      //   success: function(response) {
+      //     // Handle success
+      //   }
+      // });
+    });
+
+    // ===================================
+    // Ticket Purchase Modal
+    // ===================================
+    
+    // Open Modal
+    $("#openTicketFormBtn, .ticket-btn").on("click", function () {
+      $("#ticketModal").addClass("active");
+      $("body").css("overflow", "hidden");
+    });
+
+    // Close Modal
+    $("#closeTicketModal, .ticket-modal-overlay").on("click", function () {
+      $("#ticketModal").removeClass("active");
+      $("body").css("overflow", "auto");
+      resetTicketForm();
+    });
+
+    // Next Step
+    $(".next-step").on("click", function () {
+      var nextStep = $(this).data("next");
+      
+      // Validate current step
+      var currentStep = $(this).closest(".form-step");
+      var isValid = true;
+      
+      currentStep.find("[required]").each(function () {
+        if (!this.checkValidity()) {
+          isValid = false;
+          $(this).addClass("error");
+        } else {
+          $(this).removeClass("error");
+        }
+      });
+      
+      if (!isValid) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+      
+      // Update order summary if moving to payment step
+      if (nextStep === 3) {
+        updateOrderSummary();
+      }
+      
+      // Navigate to next step
+      $(".form-step").removeClass("active");
+      $(`.form-step[data-step="${nextStep}"]`).addClass("active");
+    });
+
+    // Previous Step
+    $(".prev-step").on("click", function () {
+      var prevStep = $(this).data("prev");
+      $(".form-step").removeClass("active");
+      $(`.form-step[data-step="${prevStep}"]`).addClass("active");
+    });
+
+    // Update Order Summary
+    function updateOrderSummary() {
+      var selectedTicket = $('input[name="ticketType"]:checked');
+      var quantity = parseInt($("#ticketQuantity").val()) || 1;
+      var ticketPrice = parseInt(selectedTicket.data("price")) || 0;
+      
+      var ticketNames = {
+        "vip-front": "VIP Front Row",
+        "vip-general": "VIP General",
+        "general": "General Admission",
+        "vip-table": "VIP Table (10 Guests)"
+      };
+      
+      var ticketType = ticketNames[selectedTicket.val()] || "-";
+      var subtotal = ticketPrice * quantity;
+      var serviceFee = Math.round(subtotal * 0.1); // 10% service fee
+      var total = subtotal + serviceFee;
+      
+      $("#summaryTicketType").text(ticketType);
+      $("#summaryQuantity").text(quantity);
+      $("#summarySubtotal").text("$" + subtotal.toLocaleString());
+      $("#summaryFee").text("$" + serviceFee.toLocaleString());
+      $("#summaryTotal").text("$" + total.toLocaleString());
+    }
+
+    // Ticket Purchase Form Submission
+    $("#ticketPurchaseForm").on("submit", function (e) {
+      e.preventDefault();
+      
+      // Hide form, show success message
+      $(this).hide();
+      $("#successMessage").addClass("active");
+      
+      console.log("Ticket purchase submitted:", $(this).serialize());
+      
+      // In production, process payment here
+    });
+
+    // Close Success Message
+    $("#closeSuccessBtn").on("click", function () {
+      $("#ticketModal").removeClass("active");
+      $("body").css("overflow", "auto");
+      resetTicketForm();
+    });
+
+    // Reset Ticket Form
+    function resetTicketForm() {
+      $("#ticketPurchaseForm")[0].reset();
+      $(".form-step").removeClass("active");
+      $(`.form-step[data-step="1"]`).addClass("active");
+      $("#ticketPurchaseForm").show();
+      $("#successMessage").removeClass("active");
+    }
+
+    // Card Number Formatting
+    $('input[name="cardNumber"]').on("input", function () {
+      var value = $(this).val().replace(/\s+/g, "");
+      var formattedValue = value.match(/.{1,4}/g);
+      if (formattedValue) {
+        $(this).val(formattedValue.join(" "));
+      }
+    });
+
+    // Expiry Date Formatting
+    $('input[name="expiry"]').on("input", function () {
+      var value = $(this).val().replace(/\D/g, "");
+      if (value.length >= 2) {
+        $(this).val(value.slice(0, 2) + "/" + value.slice(2, 4));
+      } else {
+        $(this).val(value);
+      }
     });
 
     // ===================================

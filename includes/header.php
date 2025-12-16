@@ -63,6 +63,18 @@ if (!isset($page_desc)) {
   if ($request_uri == '/events' || $request_uri == '/events.php') {
     $current_page = 'events.php';
   }
+  // Check for sponsors
+  if ($request_uri == '/sponsors' || $request_uri == '/sponsors.php') {
+    $current_page = 'sponsors.php';
+  }
+  // Check for contact
+  if ($request_uri == '/contact' || $request_uri == '/contact.php') {
+    $current_page = 'contact.php';
+  }
+  // Check for tickets
+  if ($request_uri == '/tickets' || $request_uri == '/tickets.php') {
+    $current_page = 'tickets.php';
+  }
   ?>
 </head>
 
@@ -110,10 +122,13 @@ if (!isset($page_desc)) {
         </li>
 
         <li class="nav-item dropdown">
-          <a href="./#sponsors" class="nav-link">Sponsors</a>
+          <a href="sponsors"
+            class="nav-link <?php echo ($current_page == 'sponsors.php') ? 'active' : ''; ?>">Sponsors</a>
           <ul class="dropdown-menu">
-            <li><a href="./#sponsor-with-us">Sponsor With Us</a></li>
-            <li><a href="./#past-sponsors">Past Sponsors</a></li>
+            <li><a href="sponsors#sponsorship-tiers">Sponsorship Packages</a></li>
+            <li><a href="sponsors#past-sponsors">Past Sponsors</a></li>
+            <li><a href="sponsors#sponsor-deck">Sponsor Deck</a></li>
+            <li><a href="sponsors#contact-us">Request a Call</a></li>
           </ul>
         </li>
 
@@ -124,10 +139,10 @@ if (!isset($page_desc)) {
           <a href="./#press" class="nav-link">Press & Media</a>
         </li>
         <li class="nav-item">
-          <a href="./#tickets" class="nav-link">Tickets</a>
+          <a href="tickets" class="nav-link <?php echo ($current_page == 'tickets.php') ? 'active' : ''; ?>">Tickets</a>
         </li>
         <li class="nav-item">
-          <a href="./#contact" class="nav-link">Contact</a>
+          <a href="contact" class="nav-link <?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a>
         </li>
       </ul>
 

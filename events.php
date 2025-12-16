@@ -204,44 +204,6 @@ include 'includes/header.php';
       </div>
     </div>
 
-    <!-- Participating Designers -->
-    <div style="margin-bottom: 5rem;">
-      <h3 style="font-size: 2.5rem; text-align: center; margin-bottom: 1rem; color: white;" data-aos="fade-up">
-        Featured Designers
-      </h3>
-      <p style="text-align: center; color: #9ca3af; margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;"
-        data-aos="fade-up" data-aos-delay="100">
-        Meet the visionaries showcasing their collections at IFFC Canada
-      </p>
-
-      <div class="designers-grid">
-        <div class="designer-card" data-aos="fade-up">
-          <div class="designer-image">
-            <img src="assets/images/designers/mayur-girotra.png" alt="Mayyur Girotra" />
-          </div>
-          <h3 class="designer-name">MAYYUR GIROTRA</h3>
-        </div>
-        <div class="designer-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="designer-image">
-            <img src="assets/images/designers/nomi-ansari.png" alt="Nomi Ansari" />
-          </div>
-          <h3 class="designer-name">NOMI ANSARI</h3>
-        </div>
-        <div class="designer-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="designer-image">
-            <img src="assets/images/designers/aleksandra-baranova.jpeg" alt="Aleksandra Baranova" />
-          </div>
-          <h3 class="designer-name">ALEKSANDRA BARANOVA</h3>
-        </div>
-        <div class="designer-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="designer-image">
-            <img src="assets/images/designers/moel-bosh.jpeg" alt="Moel Bosh" />
-          </div>
-          <h3 class="designer-name">MOEL BOSH</h3>
-        </div>
-      </div>
-    </div>
-
     <!-- Gallery Slider -->
     <div style="margin-bottom: 5rem;">
       <h3 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: white;" data-aos="fade-up">
@@ -266,72 +228,7 @@ include 'includes/header.php';
             <img src="assets/images/backstage-moments/backstage-1.png" alt="Gallery 5" />
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
-      </div>
-    </div>
-
-    <!-- Sponsors Section -->
-    <div>
-      <h3 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: white;" data-aos="fade-up">
-        Our Sponsors
-      </h3>
-
-      <div class="sponsors-marquee-container">
-        <div class="sponsors-track">
-          <!-- Original Set -->
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/hum-world.png" alt="Hum World" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/international-fashion.png" alt="International Fashion" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/queen-manner.png" alt="Queen Manner" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/travel-arrangers.png" alt="Travel Arrangers" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/the-iffshow.png" alt="The IFF Show" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/bramption.png" alt="Brampton" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/nanda.png" alt="Nanda" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/haier.png" alt="Haier" />
-          </div>
-
-          <!-- Duplicate for infinite scroll -->
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/hum-world.png" alt="Hum World" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/international-fashion.png" alt="International Fashion" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/queen-manner.png" alt="Queen Manner" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/travel-arrangers.png" alt="Travel Arrangers" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/the-iffshow.png" alt="The IFF Show" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/bramption.png" alt="Brampton" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/nanda.png" alt="Nanda" />
-          </div>
-          <div class="sponsor-logo">
-            <img src="assets/images/sponsors/haier.png" alt="Haier" />
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -652,8 +549,6 @@ include 'includes/header.php';
             </a>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
@@ -893,70 +788,6 @@ include 'includes/header.php';
         </div>
       </div>
     </div>
-
-    <!-- Notable Designers Archive List -->
-    <div>
-      <h3 style="font-size: 2.5rem; text-align: center; margin-bottom: 1rem; color: white;" data-aos="fade-up">
-        Notable Designers Over The Years
-      </h3>
-      <p style="text-align: center; color: #9ca3af; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;"
-        data-aos="fade-up" data-aos-delay="100">
-        Celebrating the talented designers who have graced our runways
-      </p>
-
-      <div style="max-width: 1000px; margin: 0 auto; columns: 3; column-gap: 2rem;" data-aos="fade-up"
-        data-aos-delay="200">
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Mayyur Girotra</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">India</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Nomi Ansari</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Pakistan</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Aleksandra Baranova</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Latvia</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Moel Bosh</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Pakistan</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Deepak Perwani</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Pakistan</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">HSY</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Pakistan</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Sana Safinaz</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Pakistan</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Maria B</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Pakistan</p>
-        </div>
-        <div
-          style="break-inside: avoid; margin-bottom: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--iffc-green); border-radius: 0 4px 4px 0;">
-          <h5 style="color: var(--iffc-green); margin-bottom: 0.3rem;">Faraz Manan</h5>
-          <p style="color: #9ca3af; font-size: 0.85rem;">Pakistan</p>
-        </div>
-      </div>
-
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="#all-designers" class="btn btn-outline">View All Designers</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1027,8 +858,6 @@ include 'includes/header.php';
           </div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
   </div>
